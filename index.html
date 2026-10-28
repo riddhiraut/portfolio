@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riddhi's Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo" data-tab="about">🌱 Riddhi Raut</a>
+      <nav class="tabs">
+        <button class="tab-btn active" data-tab="about">About Me</button>
+        <button class="tab-btn" data-tab="experience">Experience</button>
+        <button class="tab-btn" data-tab="contact">Contact</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ABOUT TAB -->
+    <section id="about" class="tab-panel active">
+      <h1 class="page-title">About Me</h1>
+      <p class="tagline">
+        Data Science Major + CS and Math Minors @ UGA Honors ·
+        Engineer/Developer for the TNR Project @ Develop for Good ·
+        AI Team Lead @ Dominate (early-stage student Start-up)
+      </p>
+
+      <div class="about-grid">
+        <!-- text -->
+        <div class="about-col">
+          <h2>What I'm into</h2>
+          <p>
+            I'm drawn to the space where <strong>machine learning</strong> meets
+            real-world software engineering, building systems that are as
+            thoughtful as they are functional. Whether it's training models or
+            shipping features, I like work that makes me think.
+          </p>
+          <p>
+            Outside the tech field, I write (fiction and the occasional essay),
+            dance, and tutor (Calculus 1&amp;2, Introductory Computing in Python, and SAT Math Prep)
+          </p>
+        </div>
+
+        <!-- github pfp -->
+        <div class="about-col about-photo-col">
+          <div class="photo-frame">
+            <img src="images/toothless.jpeg"
+                 alt="Profile picture">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TAB -->
+    <section id="experience" class="tab-panel">
+      <h1 class="page-title">Experience</h1>
+
+      <!-- work experience -->
+      <details class="accordion" open>
+        <summary>Current Professional Experience</summary>
+        <div class="accordion-body">
+
+          <div class="exp-item">
+            <div class="exp-head">
+              <span class="company-icon">
+                <img src="images/d4g.jpeg">
+              </span>
+              <div>
+                <h3>Engineer / Developer — TNR Project</h3>
+                <p class="meta">Develop for Good · Oct 2026 – Present</p>
+              </div>
+            </div>
+            <p>Short description of your role and impact here.</p>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-head">
+              <span class="company-icon">
+                <img src="images/dominate.png" alt="Dominate logo">
+              </span>
+              <div>
+                <h3>AI Advisory Board Team Lead</h3>
+                <p class="meta">Dominate (early-stage student startup) · Sept 2026 – Present</p>
+              </div>
+            </div>
+            <p>Short description here.</p>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-head">
+              <span class="company-icon">
+                <img src="images/schoolhouse.png" alt="Schoolhouse.world logo">
+              </span>
+              <div>
+                <h3>Senior Tutor</h3>
+                <p class="meta">Schoolhouse.world (Khan Academy Tutoring) · Jan 2024 – Present</p>
+              </div>
+            </div>
+            <p>Description.</p>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- projects -->
+      <details class="accordion">
+        <summary>Projects</summary>
+        <div class="accordion-body">
+
+          <div class="exp-item">
+            <h3>Project Name</h3>
+            <p class="meta">Tech stack · Year</p>
+            <p>What it does and why it matters.</p>
+          </div>
+
+          <div class="exp-item">
+            <h3>Project Name</h3>
+            <p class="meta">Tech stack · Year</p>
+            <p>Description.</p>
+          </div>
+
+          <div class="exp-item">
+            <h3>Project Name</h3>
+            <p class="meta">Tech stack · Year</p>
+            <p>Description.</p>
+          </div>
+
+        </div>
+      </details>
+    </section>
+
+    <!-- CONTACT TAB -->
+    <section id="contact" class="tab-panel">
+      <h1 class="page-title">Contact</h1>
+
+      <div class="contact-wrap">
+        <div class="contact-photo">
+          <!-- Replace with your professional photo -->
+          <img src="images/me.jpeg"
+               alt="Photo">
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:riddhiraut02@gmail.com" class="contact-link">
+            <span class="icon">✉️</span> riddhiraut02@gmail.com
+          </a>
+          <a href="https://github.com/riddhiraut" target="_blank" rel="noopener" class="contact-link">
+            <span class="icon">👾</span> github.com/riddhiraut
+          </a>
+          <a href="https://linkedin.com/in/riddhiraut02" target="_blank" rel="noopener" class="contact-link">
+            <span class="icon">💼</span> linkedin.com/in/riddhiraut02
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Riddhi · Built by Me 🌱</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
